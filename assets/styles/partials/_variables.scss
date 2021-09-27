@@ -1,0 +1,84 @@
+// Font base
+
+$font-size-root: 16px;
+$font-size-base: 1rem;
+$font-family-base: "Athletics";
+
+// Colors
+$primary: #3977de;
+$danger-bg: #efd9d4;
+$dark: #1c1c23;
+$blue: #1b2a4e;
+$navy-blue: #114185;
+$danger: #bb371a;
+$dark-50: #333d47;
+$dark-25: #677189;
+$dark-20: #b3b3b6;
+$warning: #fdca40;
+$success: #1eae98;
+$success-bg: #f2fffd;
+$success-op-1: rgba(30, 174, 152, 0.1);
+$lightblue: #ebf1fc;
+$light: #fcfcfc;
+$light-50: #f6f6f8;
+$white: #ffffff;
+$grey-50: #68686c;
+$grey-80: #8d8d91;
+$disabled: #d2d2d3;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger-bg": $danger-bg,
+  "dark": $dark,
+  "blue": $blue,
+  "navy-blue": $navy-blue,
+  "danger": $danger,
+  "dark-50": $dark-50,
+  "dark-25": $dark-25,
+  "dark-20": $dark-20,
+  "warning": $warning,
+  "success": $success,
+  "success-bg": $success-bg,
+  "success-op-1": $success-op-1,
+  "lightblue": $lightblue,
+  "light": $light,
+  "light-50": $light-50,
+  "white": $white,
+  "grey-50": $grey-50,
+  "grey-80": $grey-80,
+  "disabled": $disabled,
+);
+
+.dark-25 {
+  color: $dark-25;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$fw-normal: 400;
+$fw-medium: 600;
+$fw-bold: 700;
+
+// Forms
+// $input-btn-padding-y: 0.375rem;
+// $input-btn-padding-x: 1.25rem;
+// $input-btn-padding-x: 1rem;
+$input-btn-font-family: $font-family-base;
+$input-btn-font-size: $font-size-base;
+$input-btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-focus-width: 0;
+$btn-focus-box-shadow: none;
+$btn-active-border-shade-amount: 0;
+$btn-active-border-tint-amount: 0;
+$btn-hover-bg-shade-amount: 10%;
+$btn-hover-bg-tint-amount: 0;
+$btn-hover-border-shade-amount: 10%;
+$btn-hover-border-tint-amount: 0;

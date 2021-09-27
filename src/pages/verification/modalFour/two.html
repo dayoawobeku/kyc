@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=0"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../../../assets/styles/global.css" />
+
+    <title>Verification/Four</title>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body rounded">
+          <div>
+            <div
+              class="
+                d-flex
+                justify-between
+                align-items-center
+                position-relative
+              "
+            >
+              <a href="./one.html" aria-label="Close">
+                <img
+                  src="../../../../assets/images/back.svg"
+                  class="position-absolute"
+                  style="top: 0"
+                />
+              </a>
+
+              <div class="mx-auto">
+                <img
+                  src="../../../../assets/images/logo-mobile.svg"
+                  alt=""
+                  class="d-block d-sm-none"
+                  style="margin-top: 7px"
+                />
+              </div>
+
+              <img
+                class="close d-none d-sm-block"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                src="../../../../assets/images/close.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="d-flex justify-center mt-1">
+              <div class="d-flex justify-center mt-1">
+                <img
+                  src="../../../../assets/images/logo.svg"
+                  alt=""
+                  class="d-none d-sm-block"
+                />
+              </div>
+            </div>
+
+            <div class="flex-column text-center max-w-384 mx-auto">
+              <p class="body fw-medium text-blue mt-16 mb-0">
+                Enter the OTP sent to your phone number that ends with +234
+                ****** 0520
+              </p>
+            </div>
+
+            <div class="flex-column text-center max-w-384 mx-auto">
+              <p class="small text-left text-blue mt-40 mb-2" for="country">
+                OTP
+              </p>
+
+              <form name="otp" class="d-flex position-relative">
+                <input
+                  type="password"
+                  id="digit1"
+                  name="digit1"
+                  data-next="digit-2"
+                  class="otp-input border-0 rounded bg-lightblue"
+                  maxlength="1"
+                  oninput="autotab(this, document.otp.digit2)"
+                />
+                <input
+                  type="password"
+                  id="digit2"
+                  name="digit2"
+                  data-next="digit-3"
+                  data-previous="digit-1"
+                  class="otp-input border-0 rounded bg-lightblue"
+                  maxlength="1"
+                  oninput="autotab(this, document.otp.digit3)"
+                />
+                <input
+                  type="password"
+                  id="digit3"
+                  name="digit3"
+                  data-next="digit-4"
+                  data-previous="digit-2"
+                  class="otp-input border-0 rounded bg-lightblue"
+                  maxlength="1"
+                  oninput="autotab(this, document.otp.digit4)"
+                />
+                <input
+                  type="password"
+                  id="digit4"
+                  name="digit4"
+                  data-next="digit-5"
+                  data-previous="digit-3"
+                  class="otp-input border-0 rounded bg-lightblue"
+                  maxlength="1"
+                />
+              </form>
+
+              <p class="mt-32 fw-bold small text-blue text-center mb-0">
+                Didn’t get OTP? Resend in :
+                <span class="text-primary"> 01:23 </span>
+              </p>
+              <div class="mt-32 max-w-384">
+                <a href="./three.html"
+                  ><button class="btn btn-primary w-100" type="button">
+                    Continue
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./otp.js"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

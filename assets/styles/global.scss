@@ -1,0 +1,418 @@
+@import "./partials/_variables.scss";
+@import "./fonts.scss";
+@import "./partials/_functions.scss";
+@import "./partials/_forms.scss";
+@import "./partials/_mixins.scss";
+
+:root,
+* {
+  scrollbar-color: rgba(57, 119, 222, 0.1) !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.3em !important;
+  height: 0.3em !important;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(57, 119, 222, 0.1) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #677185 !important;
+  border-radius: 10px !important;
+}
+
+.overflow-auth::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.fw-regular {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-bolder {
+  font-weight: 800 !important;
+}
+
+.fz-25 {
+  font-size: rem(25);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.semi-small {
+  font-size: 0.875rem !important;
+}
+
+small,
+.small {
+  font-size: 0.8125rem !important;
+}
+
+.super-small {
+  font-size: 0.625rem !important;
+}
+
+.extremely-small {
+  font-size: 0.5rem !important;
+}
+
+.x-small {
+  font-size: 0.75rem !important;
+}
+
+body {
+  font-family: "Athletics" !important;
+  font-size: rfs(16, 14.5) !important;
+  background: $white;
+  height: 100vh;
+  @extend .fw-regular;
+  color: $blue;
+}
+
+h1 {
+  @extend .fw-bolder;
+}
+
+h2,
+h3,
+h4 {
+  @extend .fw-bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-w-448 {
+  max-width: rem(448);
+}
+
+.max-w-548 {
+  max-width: rem(548);
+}
+
+.max-w-313 {
+  max-width: rem(313);
+}
+
+.max-w-397 {
+  max-width: rem(397);
+}
+
+.max-w-384 {
+  max-width: rem(384);
+}
+
+.mt-24 {
+  margin-top: rem(24);
+}
+
+.mt-16 {
+  margin-top: rem(16);
+}
+
+.mt-8 {
+  margin-top: rem(8);
+}
+
+.mt-32 {
+  margin-top: rem(32);
+}
+
+.mt-40 {
+  margin-top: rem(40);
+}
+
+.mt-48 {
+  margin-top: rem(48);
+}
+
+.mb-40 {
+  margin-bottom: rem(40);
+}
+
+.mb-48 {
+  margin-bottom: rem(48);
+}
+
+.shadow {
+  box-shadow: 0px 5px 10px rgba(33, 33, 33, 0.12) !important;
+}
+
+.rounded {
+  border-radius: 4px !important;
+}
+
+.semi-rounded {
+  border-radius: 4px !important;
+}
+
+.very-rounded {
+  border-radius: 40px !important;
+}
+
+.roundless {
+  border-radius: 0 !important;
+}
+
+.dojah {
+  width: 100px;
+  height: 35.19px;
+}
+
+.dojah-small {
+  width: 54px;
+  height: 19px;
+}
+
+.vh-100 {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  max-height: 100vh;
+  max-height: calc(var(--vh, 1vh) * 100);
+}
+
+.vh-min {
+  min-height: 100vh !important;
+  min-height: calc(var(--vh, 1vh) * 100);
+  &__100 {
+    min-height: inherit;
+  }
+}
+
+.app-container {
+  max-width: 1100px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  max-width: rem(384);
+  outline: none;
+  border: none;
+  border-radius: rem(4);
+  font-size: rem(14);
+  padding: rem(13.5) rem(16);
+  cursor: pointer;
+}
+
+.btn {
+  line-height: 2.5;
+}
+
+.btn-primary {
+  background: $primary;
+  color: $white;
+}
+
+.border-primary {
+  border: 1px solid $primary;
+}
+
+.border-grey {
+  border: 1px solid $light-50;
+}
+
+.text-blue {
+  color: $blue !important;
+}
+
+.text-danger {
+  color: $danger;
+}
+
+input.otp-input {
+  width: rem(58);
+  height: rem(58);
+  padding: rem(22);
+}
+
+input.otp-input:not(:last-child) {
+  margin-right: rem(50);
+}
+
+input.otp-input:focus {
+  border: none;
+  outline: none;
+}
+
+.snakey {
+  // background-image: url(../../assets/images/snake-lines.svg);
+  background-image: url("../../assets/images/snakey.gif");
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../assets/images/dropdown.svg) calc(100% - 0.75rem)
+    no-repeat #f6f6f8 !important;
+}
+
+.loader {
+  border: rem(10) solid $light-50; /* Light grey */
+  border-top: rem(10) solid $primary; /* Blue */
+  border-radius: 50%;
+  width: rem(102);
+  height: rem(102);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#verify_method > .btn-check:checked + .btn-outline-primary {
+  color: $blue !important;
+  background-color: $lightblue !important;
+  border-color: $primary !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: $lightblue !important;
+}
+
+#banks_option > .btn-check:checked + .btn-outline-primary {
+  background-color: $lightblue !important;
+}
+
+#accounts_option > .btn-check:checked + .btn-outline-primary {
+  background-color: $lightblue !important;
+  border: 1px solid $primary !important;
+}
+
+#bank-acct_type .btn-check:checked + .btn-outline-primary {
+  background-color: $lightblue !important;
+  border: 1px solid $navy-blue !important;
+}
+
+body {
+  background-color: #00000063 !important;
+  overflow-y: hidden;
+}
+
+.dropdown-menu > li:hover {
+  background-image: none !important;
+  background-color: $lightblue !important;
+  color: $dark-25;
+}
+
+.dropdown-menu > li:active {
+  background-image: none !important;
+  background-color: $lightblue !important;
+  color: $dark-25;
+}
+
+.form-control {
+  padding-left: rem(16) !important;
+  padding-right: rem(16) !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-color: #ffffff !important;
+  }
+  .modal-body {
+    padding: 0.5rem !important;
+  }
+  .modal-content {
+    border: none !important;
+  }
+  p {
+    font-size: rem(13);
+  }
+  #id_type {
+    font-size: 1rem !important;
+  }
+  select,
+  option,
+  ::placeholder {
+    font-size: rem(13) !important;
+  }
+  input.otp-input:not(:last-child) {
+    margin-right: rem(16);
+  }
+  input.otp-input {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=0"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../../assets/styles/global.css" />
+
+    <title>Widget Flow/Four</title>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="mt-4">
+            <div class="d-flex justify-center position-relative">
+              <a
+                href="./modalThree.html"
+                class="text-decoration-none"
+                aria-label="Close"
+              >
+                <img
+                  src="../../../assets/images/back.svg"
+                  alt=""
+                  class="position-absolute"
+                  style="left: 0"
+                />
+              </a>
+              <img
+                src="../../../assets/images/access-bank-lg.svg"
+                alt=""
+                style="margin-top: 2px"
+              />
+            </div>
+
+            <div>
+              <div class="position-relative max-w-384 mx-auto text-center">
+                <div class="d-flex align-items-center mt-32 justify-between">
+                  <p class="fw-medium mb-0 mx-auto text-blue">
+                    Login with the credentials to your Access Bank Internet
+                    Banking
+                  </p>
+                  <img
+                    class="close position-absolute"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    src="../../../assets/images/close-grey.svg"
+                    alt=""
+                    style="right: 0; bottom: 64px"
+                  />
+                </div>
+              </div>
+
+              <form
+                class="flex-column text-center mx-auto position-relative mt-48"
+              >
+                <div class="flex-column w-100 max-w-384 mx-auto">
+                  <label for="text" class="text-left text-blue mb-1" id="type">
+                    Username
+                  </label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="username"
+                    autocomplete="off"
+                    required
+                  />
+                  <label
+                    for="password"
+                    class="text-left text-blue mt-4 mb-1"
+                    id="type"
+                  >
+                    Password
+                  </label>
+                  <input
+                    class="form-control"
+                    type="password"
+                    id="password"
+                    minlength="8"
+                    onkeyup="passwordInput()"
+                  />
+                  <a
+                    href="#"
+                    class="
+                      text-left
+                      mt-2
+                      fw-bold
+                      text-dark-25 text-decoration-none
+                    "
+                    style="font-size: 10px"
+                    >FORGOT PASSWORD</a
+                  >
+                </div>
+
+                <div class="mt-4 w-100 mx-auto">
+                  <a href="./modalFive.html"
+                    ><button
+                      class="btn text-white w-100 bg-navy-blue"
+                      type="button"
+                      disabled
+                      id="submit"
+                    >
+                      Continue
+                    </button></a
+                  >
+                </div>
+              </form>
+
+              <p class="small text-blue mt-16 text-center">
+                Powered by
+                <span class="ms-2">
+                  <img src="../../../assets/images/logo-small.svg" alt="" />
+                </span>
+              </p>
+              <!-- <a
+                  href="./modalThree.html"
+                  class="text-decoration-none"
+                  aria-label="Close"
+                >
+                  <button
+                    class="d-flex align-items-center btn mx-auto mt-1"
+                    style="color: #8d8d91"
+                  >
+                    Back
+                  </button>
+                </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./disableButton.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

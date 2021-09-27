@@ -1,0 +1,107 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px #f6f6f8 inset !important;
+  -webkit-box-shadow: 0 0 0 30px #f6f6f8 inset !important;
+}
+
+.form-control,
+.form-select,
+.textarea {
+  background: #f6f6f8 !important;
+  outline: none !important;
+  border: 1px solid transparent !important;
+  color: $blue !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  &::placeholder {
+    color: $dark-25;
+    opacity: 0.5 !important;
+    font-size: rem(14) !important;
+  }
+}
+
+.form-control,
+.form-select {
+  height: 48px !important;
+}
+
+.form-control {
+  display: flex !important;
+}
+
+.textarea {
+  height: 167px !important;
+  resize: none !important;
+}
+
+label {
+  font-size: rem(13) !important;
+  color: $dark-25 !important;
+  @extend .fw-regular;
+}
+
+.btn {
+  height: 48px;
+  font-size: 0.875rem !important;
+  @extend .fw-medium;
+  &:disabled {
+    background-color: #d2d2d3 !important;
+    border-color: #d2d2d3 !important;
+  }
+  &-white {
+    color: $primary;
+  }
+  &-initial {
+    height: initial !important;
+  }
+  &-sm {
+    height: 36px !important;
+  }
+}
+
+.border-dotted {
+  border: 1px dashed $primary !important;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    border-width: 1px !important;
+  }
+
+  .btn-#{$color} {
+    color: $white !important;
+
+    &:hover {
+      background-color: transparentize(
+        $color: $value,
+        $amount: 0.15
+      ) !important;
+      border-color: transparentize($color: $value, $amount: 0.15) !important;
+    }
+  }
+}
+
+.btn-light {
+  color: $primary !important;
+}
+.btn-outline-white {
+  background-color: transparent !important;
+}
+
+// Inputs
+@each $color, $value in $theme-colors {
+  .outline-focus-#{$color}:focus {
+    border-color: $value !important;
+  }
+}
+
+select {
+  height: rem(48) !important;
+  padding-left: rem(24);
+  padding-right: rem(16);
+  outline: none;
+  border: none;
+  background: $light-50;
+}

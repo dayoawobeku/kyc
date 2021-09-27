@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Athletics";
+  src: local("Athletics Regular"),
+    url("../fonts/athletics400.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: local("Athletics Medium"),
+    url("../fonts/athletics500.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: local("Athletics Semi Bold"),
+    url("../fonts/athletics700.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Athletics";
+  src: local("Athletics Bold"),
+    url("../fonts/athletics800.ttf") format("truetype");
+  font-weight: 800;
+}

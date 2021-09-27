@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=0"
+    />
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../../assets/styles/global.css" />
+
+    <title>Widget Demo/Three</title>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <div class="d-flex justify-center position-relative">
+              <a
+                href="./modalTwo.html"
+                class="text-decoration-none"
+                aria-label="Close"
+              >
+                <img
+                  src="../../../assets/images/back.svg"
+                  alt=""
+                  class="position-absolute"
+                  style="left: 0"
+                />
+              </a>
+              <img
+                src="../../../assets/images/logo-small.svg"
+                alt=""
+                style="margin-top: 9px"
+              />
+            </div>
+
+            <div>
+              <div class="position-relative">
+                <div class="d-flex align-items-center mt-16 justify-between">
+                  <p class="fw-medium mb-0 mx-auto">Choose your bank type</p>
+                  <img
+                    class="close position-absolute"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    src="../../../assets/images/close-grey.svg"
+                    alt=""
+                    style="right: 0"
+                  />
+                </div>
+              </div>
+
+              <form
+                id="accounts_option"
+                class="flex-column text-center mx-auto position-relative mt-48"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="account-type"
+                  id="individual-account"
+                  autocomplete="off"
+                />
+                <label
+                  onclick="changeFill(0)"
+                  id="individual"
+                  class="
+                    body
+                    text-blue
+                    btn btn-outline-primary
+                    bg-light-50
+                    border border-light-50
+                    very-rounded
+                    d-flex
+                    align-items-center
+                    w-100
+                    mx-auto
+                  "
+                  style="width: fit-content; height: 56px !important"
+                  for="individual-account"
+                >
+                  <div class="py-3 ps-1 pe-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M20 22H4V20C4 18.6739 4.52678 17.4021 5.46447 16.4645C6.40215 15.5268 7.67392 15 9 15H15C16.3261 15 17.5979 15.5268 18.5355 16.4645C19.4732 17.4021 20 18.6739 20 20V22ZM12 13C11.2121 13 10.4319 12.8448 9.7039 12.5433C8.97595 12.2417 8.31451 11.7998 7.75736 11.2426C7.20021 10.6855 6.75825 10.0241 6.45672 9.2961C6.15519 8.56815 6 7.78793 6 7C6 6.21207 6.15519 5.43185 6.45672 4.7039C6.75825 3.97595 7.20021 3.31451 7.75736 2.75736C8.31451 2.20021 8.97595 1.75825 9.7039 1.45672C10.4319 1.15519 11.2121 1 12 1C13.5913 1 15.1174 1.63214 16.2426 2.75736C17.3679 3.88258 18 5.4087 18 7C18 8.5913 17.3679 10.1174 16.2426 11.2426C15.1174 12.3679 13.5913 13 12 13V13Z"
+                        fill="#677189"
+                        class="account_svg"
+                      />
+                    </svg>
+                  </div>
+
+                  Individual account
+                </label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="account-type"
+                  id="corporate-account"
+                  autocomplete="off"
+                />
+                <label
+                  onclick="changeFill(1)"
+                  id="corporate"
+                  class="
+                    body
+                    text-blue
+                    btn btn-outline-primary
+                    bg-light-50
+                    border border-light-50
+                    very-rounded
+                    d-flex
+                    align-items-center
+                    w-100
+                    mx-auto
+                    mt-24
+                  "
+                  style="width: fit-content; height: 56px !important"
+                  for="corporate-account"
+                >
+                  <div class="py-3 ps-1 pe-2">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 19H23V21H1V19H3V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H14C14.2652 3 14.5196 3.10536 14.7071 3.29289C14.8946 3.48043 15 3.73478 15 4V19H17V9H20C20.2652 9 20.5196 9.10536 20.7071 9.29289C20.8946 9.48043 21 9.73478 21 10V19ZM7 11V13H11V11H7ZM7 7V9H11V7H7Z"
+                        fill="#677189"
+                        class="account_svg"
+                      />
+                    </svg>
+                  </div>
+
+                  Corporate account
+                </label>
+              </form>
+
+              <div class="d-flex flex-column text-center">
+                <div class="mt-40 w-100 mx-auto">
+                  <a href="./modalFour.html"
+                    ><button class="btn btn-primary w-100" type="button">
+                      Continue
+                    </button></a
+                  >
+                </div>
+                <p class="small text-blue mt-16">
+                  Powered by
+                  <span class="ms-2">
+                    <img src="../../../assets/images/logo-small.svg" alt="" />
+                  </span>
+                </p>
+                <!-- <a
+                  href="./modalTwo.html"
+                  class="text-decoration-none"
+                  aria-label="Close"
+                >
+                  <button
+                    class="d-flex align-items-center btn mx-auto mt-1"
+                    style="color: #8d8d91"
+                  >
+                    Back
+                  </button>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./accountOptions.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
