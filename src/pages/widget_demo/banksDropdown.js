@@ -7,12 +7,12 @@ const selectedCountry = document.getElementById("dropdownMenuButton");
 
 // toggle check mark and background color onclick
 const countryChecked = document.createElement("img");
-countryChecked.src = "../../../../assets/images/check.svg";
+countryChecked.src = "../../../assets/images/check.svg";
 nigeria.appendChild(countryChecked);
 
 // for some reason, the dropdown disappeared on clicking another country. this fixed it
 const showDropdown = document.createElement("img");
-showDropdown.src = "../../../../assets/images/dropdown.svg";
+showDropdown.src = "../../../assets/images/dropdown.svg";
 
 function addDropdown() {
   selectedCountry.appendChild(showDropdown);

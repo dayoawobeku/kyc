@@ -1,13 +1,9 @@
 // toggle check mark and background color onclick
 const div = document.createElement("div");
-console.log(div);
 const optionChecked = document.createElement("img");
-optionChecked.src =
-  "../../../assets/images/check.svg" && "../../../../assets/images/check.svg";
+optionChecked.src = "../../../assets/images/check.svg";
 div.style.position = "absolute";
 div.style.right = "16px";
-// div.style.background = "red";
-// div.style.width = "100%";
 div.appendChild(optionChecked);
 
 const banks = document.querySelectorAll(".banks");
